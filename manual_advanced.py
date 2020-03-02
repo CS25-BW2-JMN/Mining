@@ -3,7 +3,7 @@ from datetime import datetime, timedelta
 import requests
 from ast import literal_eval
 baseURL = "https://lambda-treasure-hunt.herokuapp.com/api/adv/"
-key = '4f18243e2c6cbc6c63dcdf152cfcb7cd854a3fa9'
+key = config('API')
 headers = {'Authorization': 'Token ' + key}
 
 # INIT
@@ -23,8 +23,7 @@ while True:
         traversal_graph[room] = {}
         for exit in data['exits']:
             traversal_graph[room][exit] = '?'
-    print('You are in room ' + str(data['room_id']))
-    print(data['coordinates'])
+    print(data['coordinates'] + 'You are in room ' + str(data['room_id']))
     print(data['title'] + ': ' + data['description'])
     print(" ")
     print("MESSAGES FROM THE SERVER")
@@ -44,6 +43,8 @@ while True:
     while datetime.now() < avail_time:
         pass
     ans = input('What direction do you want to go in? Press q to quit! ')
+    if not ans:
+        break
     ans = ans[0]
     print(" ")
     if ans == 'q':
