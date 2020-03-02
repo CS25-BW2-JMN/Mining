@@ -38,4 +38,6 @@
   303: ['(54,69)', 'A Dark Cave', 'You are standing in a dark cave.'],
   405: ['(53,69)', 'A Dark Cave', 'You are standing in a dark cave.'],
   461: ['(55,74)', "Linh's Shrine", 'You are standing before a glowing shrine to a Linh, the Swift. She looks quite fast.'],
+  2: ['(60,59)', 'A misty room', 'You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.'],
+  6: ['(60,58)', 'A misty room', 'You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.'],
 }
