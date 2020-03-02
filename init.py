@@ -13,3 +13,5 @@ for exit in data['exits']:
     traversal[data['room_id']][exit] = '?'
 map.write(str(traversal))
 rooms.write(str(room))
+map.close()
+rooms.close()
