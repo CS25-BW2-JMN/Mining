@@ -1,1 +1,7 @@
-{0: ['(60,60)', 'A brightly lit room']}
+{
+  0: ['(60,60)', 'A brightly lit room', 'You are standing in the center of a brightly lit room. You notice a shop to the west and exits to the north, south and east.'],
+  19: ['(60,62)', 'A misty room', 'You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.'],
+  20: ['(60,63)', 'A misty room'],
+  63: ['(60,64)', 'A misty room'],
+  10: ['(60,61)', 'A misty room', 'You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.'],
+}

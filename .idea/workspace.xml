@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b08760ef-0ca5-4634-9eb2-2f9ed7c9e276" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/manual_advanced.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init.py" beforeDir="false" afterPath="$PROJECT_DIR$/init.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manual_basic.py" beforeDir="false" afterPath="$PROJECT_DIR$/manual_basic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/map.txt" beforeDir="false" afterPath="$PROJECT_DIR$/map.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rooms.txt" beforeDir="false" afterPath="$PROJECT_DIR$/rooms.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +36,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Jordan\Documents\Lambda-School\CS\Mining" />
       <recent name="C:\Users\Jordan\Documents\Lambda-School\CS\Mining\test_files" />
     </key>
   </component>

@@ -13,6 +13,7 @@ def prompt_user():
     return ans
 while True:
     print('You are in room ' + str(data['room_id']))
+    print(data['coordinates'])
     print(data['title'] + ':' + data['description'])
     print('Possible directions are: ' + str(data['exits']))
     print('YOUR COOLDOWN IS: ' + str(data['cooldown']))
