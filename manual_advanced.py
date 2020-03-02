@@ -31,6 +31,11 @@ while True:
     for message in data['messages']:
         print(message)
     print(" ")
+
+    print("ITEMS")
+    for item in data['items']:
+        print(item)
+    print(" ")
     print('Possible directions are: ' + str(data['exits']))
     print('YOUR COOLDOWN IS: ' + str(data['cooldown']))
 
@@ -42,6 +47,7 @@ while True:
         pass
     ans = input('What direction do you want to go in? Press q to quit! ')
     ans = ans[0]
+    print(" ")
     if ans == 'q':
         break
     elif ans in data['exits']:
