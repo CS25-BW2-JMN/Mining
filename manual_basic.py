@@ -2,7 +2,7 @@ from decouple import config
 from datetime import datetime, timedelta
 import requests
 baseURL = "https://lambda-treasure-hunt.herokuapp.com/api/adv/"
-key = config('API')
+key = '4f18243e2c6cbc6c63dcdf152cfcb7cd854a3fa9'
 headers = {'Authorization': 'Token ' + key}
 r = requests.get(baseURL + 'init', headers=headers)
 data = r.json()
@@ -17,6 +17,7 @@ while True:
     print('Possible directions are: ' + str(data['exits']))
     print('YOUR COOLDOWN IS: ' + str(data['cooldown']))
     print('Waiting for cooldown to finish...')
+    print('YOUR COORDINATES ARE ' + (data['coordinates']))
     avail_time = datetime.now() + timedelta(seconds=data['cooldown'])
     while datetime.now() < avail_time:
         pass
