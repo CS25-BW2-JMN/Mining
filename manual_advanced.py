@@ -31,7 +31,6 @@ while True:
     for message in data['messages']:
         print(message)
     print(" ")
-
     print("ITEMS")
     for item in data['items']:
         print(item)
