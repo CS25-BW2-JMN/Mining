@@ -62,6 +62,10 @@
   303: ['(54,69)', 'A Dark Cave', 'You are standing in a dark cave.'],
   405: ['(53,69)', 'A Dark Cave', 'You are standing in a dark cave.'],
   461: ['(55,74)', "Linh's Shrine", 'You are standing before a glowing shrine to a Linh, the Swift. She looks quite fast.'],
-  2: ['(60,59)', 'A misty room', 'You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.'],
   6: ['(60,58)', 'A misty room', 'You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.'],
+  13: ['(62,60)', 'A misty room', 'You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.'],
+  15: ['(63,60)', 'JKMT Donuts', "A glass display case separates you from fried, yummy goodness. Behind the stacks of pink boxes, you hear a worker yelling. A sign reads, 'Donuts for sale!'"],
+  23: ['(61,61)', 'A misty room', 'You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.'],
+  26: ['(62,61)', 'A misty room', 'You are standing on grass and surrounded by a dense mist. You can barely make out the exits in any direction.'],
+  55: ['(63,61)', 'Wishing Well', "You are standing besides a large well. A sign next the well reads 'EXAMINE WELL, FIND WEALTH'."],
 }
