@@ -12,9 +12,13 @@ def prompt_user():
     ans = ans[0]
     return ans
 while True:
+    
     print('You are in room ' + str(data['room_id']))
     print(data['title'] + ':' + data['description'])
-    print('Possible directions are: ' + str(data['exits']))
+    print('Coordinates' + ':' + data['coordinates'])
+    print('items' + ':' + str(data['items']))
+    print('message' + ':' + str(data['messages']))
+    print('Possible directions are: ' + str(data['exits'] ))
     print('YOUR COOLDOWN IS: ' + str(data['cooldown']))
     print('Waiting for cooldown to finish...')
     avail_time = datetime.now() + timedelta(seconds=data['cooldown'])
