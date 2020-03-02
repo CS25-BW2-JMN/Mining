@@ -19,3 +19,8 @@ info.py: Getting detailed room info, and allowing to pick up and drop
 map.py: Creating visualization of map  
  
 WHATEVER ELSE IS GOOD FOR YOU GUYS  
+
+# Things to consider
+- map visualization (creating a script to visualize map in terminal or in a text file)
+- working out script for traversal, automatic and manual (allowing inputs)
+- finding the cool rooms/power ups/items
