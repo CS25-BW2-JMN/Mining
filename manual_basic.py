@@ -14,6 +14,7 @@ def prompt_user():
 while True:
     
     print('You are in room ' + str(data['room_id']))
+    print(data['coordinates'])
     print(data['title'] + ':' + data['description'])
     print('Coordinates' + ':' + data['coordinates'])
     print('items' + ':' + str(data['items']))
