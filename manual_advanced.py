@@ -3,7 +3,7 @@ from datetime import datetime, timedelta
 import requests
 from ast import literal_eval
 baseURL = "https://lambda-treasure-hunt.herokuapp.com/api/adv/"
-key = config('API')
+key = '4f18243e2c6cbc6c63dcdf152cfcb7cd854a3fa9'
 headers = {'Authorization': 'Token ' + key}
 
 # INIT
@@ -31,14 +31,12 @@ while True:
     for message in data['messages']:
         print(message)
     print(" ")
-
     print("ITEMS")
     for item in data['items']:
         print(item)
     print(" ")
     print('Possible directions are: ' + str(data['exits']))
     print('YOUR COOLDOWN IS: ' + str(data['cooldown']))
-
     print(" ")
     print('Waiting for cooldown to finish...')
     print(" ")
