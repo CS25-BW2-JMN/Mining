@@ -45,4 +45,4 @@ for row in range(len(grid)):
             s += "  |  "
         else:
             s += "     "
-
+    print(s)
