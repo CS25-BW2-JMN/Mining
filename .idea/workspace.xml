@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b08760ef-0ca5-4634-9eb2-2f9ed7c9e276" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/move_specific.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manual_advanced.py" beforeDir="false" afterPath="$PROJECT_DIR$/manual_advanced.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/map.txt" beforeDir="false" afterPath="$PROJECT_DIR$/map.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rooms.txt" beforeDir="false" afterPath="$PROJECT_DIR$/rooms.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view_map.py" beforeDir="false" afterPath="$PROJECT_DIR$/view_map.py" afterDir="false" />
@@ -32,7 +32,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../W5/Graphs/projects/adventure" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -94,6 +94,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="733" y="327" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1583217645275">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="733" y="327" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1583217645275" />
     <state x="740" y="280" key="FileChooserDialogImpl" timestamp="1583184538826">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -114,5 +118,9 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1899" height="285" key="GridCell.Tab.0.right/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1583186634293" />
+    <state x="655" y="348" key="com.intellij.ide.util.TipDialog" timestamp="1583250345320">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="655" y="348" key="com.intellij.ide.util.TipDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1583250345320" />
   </component>
 </project>

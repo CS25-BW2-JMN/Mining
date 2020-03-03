@@ -2,11 +2,11 @@ from ast import literal_eval
 rooms = literal_eval(open('rooms.txt').read())
 traversal_graph = literal_eval(open('map.txt').read())
 
-grid = [[None]*60 for _ in range(50)]
+grid = [[None]*60 for _ in range(60)]
 for room in rooms:
     col,row = literal_eval(rooms[room][0])
     col -= 40
-    row -= 50
+    row -= 20
     grid[row][col] = room
 grid.reverse()
 for row in range(len(grid)):
