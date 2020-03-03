@@ -26,7 +26,7 @@ while True:
     print(data['coordinates'] + 'You are in room ' + str(data['room_id']) + '. ' + data['title'] + ': ' + data['description'])
     print("MESSAGES FROM THE SERVER")
     for message in data['messages']:
-        print(message)w
+        print(message)
     print("ITEMS")
     for item in data['items']:
         print(item)
@@ -51,11 +51,11 @@ while True:
         if traversal_graph.get(data['room_id']):
             if traversal_graph[data['room_id']][ans] != '?':
                 next_room = traversal_graph[data['room_id']][ans]
-                r = requests.post(url=baseURL + 'fly', json={'direction': ans, 'next_room_id': str(next_room)}, headers=headers)
+                r = requests.post(url=baseURL + 'move', json={'direction': ans, 'next_room_id': str(next_room)}, headers=headers)
             else:
-                r = requests.post(url=baseURL + 'fly', json={'direction': ans}, headers=headers)
+                r = requests.post(url=baseURL + 'move', json={'direction': ans}, headers=headers)
         else:
-            r = requests.post(url=baseURL + 'fly', json={'direction': ans}, headers=headers)
+            r = requests.post(url=baseURL + 'move', json={'direction': ans}, headers=headers)
         data = r.json()
         room = data['room_id']
         rooms[room] = [data['coordinates'], data['title'], data['description']]
