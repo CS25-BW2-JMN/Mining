@@ -3,7 +3,7 @@ from datetime import datetime, timedelta
 import requests
 from ast import literal_eval
 baseURL = "https://lambda-treasure-hunt.herokuapp.com/api/adv/"
-key = config('API')
+key = config('4f18243e2c6cbc6c63dcdf152cfcb7cd854a3fa9')
 headers = {'Authorization': 'Token ' + key}
 
 # INIT
