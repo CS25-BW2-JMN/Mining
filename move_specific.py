@@ -16,8 +16,8 @@ rooms = literal_eval(open('rooms.txt','r').read())
 
 # OPPOSITE DIRECTIONS
 opposite = {'n': 's', 'w':'e', 's': 'n', 'e':'w'}
-
-while True:
+directions = ['n','n','n','n','n','w','n','w','n','w','w','n','w','n','n','n','n','n','n']
+for i in directions:
     room = data['room_id']
     if room not in traversal_graph:
         traversal_graph[room] = {}
@@ -26,14 +26,14 @@ while True:
     print(data['coordinates'] + 'You are in room ' + str(data['room_id']))
     print(data['title'] + ': ' + data['description'])
     print(" ")
-    print("MESSAGES FROM THE SERVER")
-    for message in data['messages']:
-        print(message)
-    print(" ")
-    print("ITEMS")
-    for item in data['items']:
-        print(item)
-    print(" ")
+    # print("MESSAGES FROM THE SERVER")
+    # for message in data['messages']:
+    #     print(message)
+    # print(" ")
+    # print("ITEMS")
+    # for item in data['items']:
+    #     print(item)
+    # print(" ")
     print('Possible directions are: ' + str(data['exits']))
     print('YOUR COOLDOWN IS: ' + str(data['cooldown']))
     print(" ")
@@ -42,7 +42,8 @@ while True:
     avail_time = datetime.now() + timedelta(seconds=data['cooldown'])
     while datetime.now() < avail_time:
         pass
-    ans = input('What direction do you want to go in? Press q to quit! ')
+    # ans = input('What direction do you want to go in? Press q to quit! ')
+    ans = i
     if not ans:
         break
     ans = ans[0]
@@ -55,11 +56,11 @@ while True:
         if traversal_graph.get(data['room_id']):
             if traversal_graph[data['room_id']][ans] != '?':
                 next_room = traversal_graph[data['room_id']][ans]
-                r = requests.post(url=baseURL + 'move', json={'direction': ans, 'next_room_id': str(next_room)}, headers=headers)
+                r = requests.post(url=baseURL + 'move', json={'direction': i, 'next_room_id': str(next_room)}, headers=headers)
             else:
-                r = requests.post(url=baseURL + 'move', json={'direction': ans}, headers=headers)
+                r = requests.post(url=baseURL + 'move', json={'direction': i}, headers=headers)
         else:
-            r = requests.post(url=baseURL + 'move', json={'direction': ans}, headers=headers)
+            r = requests.post(url=baseURL + 'move', json={'direction': i}, headers=headers)
         data = r.json()
         room = data['room_id']
         rooms[room] = [data['coordinates'], data['title'], data['description']]
