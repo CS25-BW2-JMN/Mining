@@ -26,7 +26,7 @@ while True:
     print(data['coordinates'] + 'You are in room ' + str(data['room_id']) + '. ' + data['title'] + ': ' + data['description'])
     print("MESSAGES FROM THE SERVER")
     for message in data['messages']:
-        print(message)w
+        print(message)
     print("ITEMS")
     for item in data['items']:
         print(item)
